@@ -8,62 +8,120 @@ body {
   margin: 0;
 }
 /*Navbar*/
+
 #header #navbar {
   font-weight: bold !important;
 }
 #side-menu {
   top: 55px;
 }
-/* cararoul */
-/* Carousel base class */
-.header-section {
-  background: url("../images/head/1.jpg") no-repeat;
+/* Starter header */
+#intro {
+  background: url(../images/bg.jpg) no-repeat top center;
+  -webkit-background-size: cover;
   background-size: cover;
-  min-height: 700px;
-  background-attachment: fixed;
   height: 100vh;
   position: relative;
-}
-.overlay {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
   min-height: 700px;
+}
+@media (max-width: 991px) {
+  #intro {
+    height: 100vh;
+    text-align: center;
+    padding: 50px 0;
+  }
+}
+#intro .overlay {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
-.carousel {
-  min-height: 700px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: #ff0033;
+@media (max-width: 991px) {
+  #intro .overlay {
+    width: 100%;
+    height: 100%;
+  }
 }
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
+.centering-vh {
+  margin-top: 25vh;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 30rem;
-  /*background-color: #777;*/
+@media (max-width: 991px) {
+  .centering-vh {
+    margin-top: 30px;
+  }
 }
-.carousel-indicators li {
-  margin-top: -100px;
+#intro .intro-text {
+  padding: 20px 0;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+#intro h2 {
+  font-weight: bold;
+  font-size: 60px;
+}
+@media (max-width: 991px) {
+  #intro h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+}
+
+#intro .lead {
+  font-size: 30px;
+}
+@media (max-width: 991px) {
+  #intro h2 ~ .lead {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  #intro h2 ~ .lead:after {
+    margin: 25px auto;
+  }
+}
+#intro .scrol-btn .fa {
+  border: #fff 2px solid;
+  border-radius: 50%;
+  padding: 15px 20px;
+  text-align: center;
+  background: transparent;
+  margin-top: 10px;
+}
+@media (max-width: 991px) {
+  #intro .scrol-btn .fa {
+    margin-top: 20px;
+  }
 }
 /*About */
 .about-section {
   background-color: #080327;
   color: #fff;
-  padding: 40px 0;
+  padding: 80px 0;
 }
 
 /*Sevices*/
+
 #services {
   padding: 80px 0;
+  background: url(../images/bg.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+#services .overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 #services .fa {
   border: #080327 3px solid;
@@ -76,7 +134,7 @@ body {
   padding: 80px 0;
 }
 #skills .fa {
-  border: #080327 3px solid;
+  border: #080327 4px solid;
   border-radius: 50%;
   padding: 10px 15px;
   text-align: center;
@@ -96,15 +154,27 @@ body {
 
 /*footer 2*/
 .footer {
-  padding: 80px 0;
-  margin-bottom: 0;
+  padding: 0;
 }
-.footer .fa {
-  padding: 5px 10px;
+.footer .social-icon {
+  padding-top: 20px;
 }
 .copyright {
-  margin-top: 0;
-  margin-bottom: -20px;
-  font-size: 25px;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/*My framework*/
+.after-line:after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: #fff;
+  margin: 25px auto;
+  text-align: center;
+}
+.logo {
+  font-weight: bold;
+  color: red;
 }
