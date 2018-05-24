@@ -1,4 +1,63 @@
 body{
-  background: #ccc;
-  color: white;
+  background: #fff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  height: 100%;
+  width: 100%;
+  margin: 0
+}
+/*Navbar*/
+#header #navbar{
+  font-weight: bold !important;
+}
+#side-menu{
+  top: 55px;
+}
+/* cararoul */
+/* Carousel base class */
+.header-section{
+  background:url('../images/head/1.jpg') no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+
+}
+.overlay{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  min-height: 700px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.carousel {
+  min-height: 700px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #FF0033;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 30rem;
+  /*background-color: #777;*/
+}
+.carousel-indicators li{
+  margin-top: -100px;
+}
+/*About */
+.about-section{
+    background-color: #080327;
+    color: #fff;
+    padding: 40px 0;
 }

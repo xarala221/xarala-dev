@@ -1,10 +1,8 @@
 {% extends 'base.html' %}
-
-
 {% block content %}
 
-  
-<h1>Welcome</h1>
-<p> Pour tester l'installation </p>
-  
+  {% include 'portfolio/header.html' %}
+  {% include 'portfolio/content.html' %}
+  {% include 'portfolio/footer.html' %}
+
 {% endblock content %}
