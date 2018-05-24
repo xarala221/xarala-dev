@@ -1,36 +1,44 @@
-body{
+body {
   background: #fff;
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
   height: 100%;
   width: 100%;
-  margin: 0
+  margin: 0;
 }
 /*Navbar*/
-#header #navbar{
+#header #navbar {
   font-weight: bold !important;
 }
-#side-menu{
+#side-menu {
   top: 55px;
 }
 /* cararoul */
 /* Carousel base class */
-.header-section{
-  background:url('../head/1.jpg') no-repeat;
+.header-section {
+  background: url("../images/head/1.jpg") no-repeat;
   background-size: cover;
   min-height: 700px;
   background-attachment: fixed;
-
+  height: 100vh;
+  position: relative;
 }
-.carousel {
-  margin-bottom: 0;
-  margin-top: 8px;
-  background-size: cover;
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  min-height: 700px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  min-height: auto;
-  color: #FF0033;
+}
+.carousel {
+  min-height: 700px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ff0033;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -40,23 +48,42 @@ body{
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
-  background-color: #777;
+  height: 30rem;
+  /*background-color: #777;*/
 }
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
+.carousel-indicators li {
+  margin-top: -100px;
 }
-.overlay{
-  background-color: rgba(0, 0, 0, 0.5)
+/*About */
+.about-section {
+  background-color: #080327;
+  color: #fff;
+  padding: 40px 0;
 }
 
-/*About */
-.about-section{
-    background-color: #080327;
-    color: #fff;
-    padding: 40px 0;
+/*Sevices*/
+#services {
+  padding: 80px 0;
+}
+/*Skills*/
+#skills {
+  padding: 80px 0;
+}
+
+/*Portfolio*/
+#portfolio {
+  padding: 80px 0;
+}
+/*Testimonials*/
+#testimonials {
+  padding: 80px 0;
+}
+/*footter 1*/
+#footer-section {
+  padding: 80px 0;
+}
+
+/*footer 2*/
+.footer {
+  padding: 80px 0;
 }

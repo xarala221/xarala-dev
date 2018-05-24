@@ -1,4 +1,5 @@
 <!-- === Start About Us === -->
+{% load static %}
 <div class="about-section text-center">
     <div class="container">
         <h1 class="about-intro">About Us</h1>
@@ -9,18 +10,117 @@
 <!-- === End About Us === -->
 
 <!-- === Start Services === -->
-<h1> Services </h1>
+<div id="services" class="bg-secondary text-light">
+    <div class="container">
+        <h1 class="service-intro text-center">Services</h1>
+        <p class="service-desc text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum temporibus sapiente sed odit rem quasi.</p>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h4 class="">Design</h4>
+                <i class="fa fa-cog fa-4x"></i>
+                <ul class="list-unstyled">
+                    <li>App Design</li>
+                    <li>Web Design</li>
+                    <li>Graphic Design</li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>Web & Mobile App</h4>
+                <i class="fa fa-cog fa-4x"></i>
+                <ul class="list-unstyled">
+                    <li>Web Design</li>
+                    <li>Graphic Design</li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>SEO</h4>
+                <i class="fa fa-cog fa-4x"></i>
+                <ul class="list-unstyled">
+                    <li>Web Design</li>
+                    <li>Graphic Design</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- === End Services === -->
 
 <!-- === Start Skils === -->
-<h1> Skills </h1>
+<div id="skills" class="bg-light text-dark">
+    <div class="container">
+        <h1 class="skills-intro text-center">Skills</h1>
+        <p class="skills-desc text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum temporibus sapiente sed odit rem quasi.</p>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h4>Tools</h4>
+                <i class="fa fa-cog fa-4x"></i>
+                <ul class="list-unstyled">
+                    <li>Web Design</li>
+                    <li>Graphic Design</li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>Front-End</h4>
+               <i class="fa fa-cog fa-4x"></i>
+                <ul class="list-unstyled">
+                    <li>Web Design</li>
+                    <li>Graphic Design</li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>Back-End</h4>
+                <i class="fa fa-cog fa-4x"></i>
+                <ul class="list-unstyled">
+                    <li>Web Design</li>
+                    <li>Graphic Design</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- === End Skils === -->
 
 
-<!-- === Start Contact === -->
-<h1> Portfolio </h1>
-<!-- === End Contact === -->
+<!-- === Start Portfolio === -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="portfolio-intro text-center">Take a look at <strong>Our Works</strong></h1>
+        <p class="portfolio-desc text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum provident perspiciatis, aliquid distinctio doloribus id!</p>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="{% static 'images/head/1.jpg' %}" alt="" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/head/1.jpg' %}" alt="" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/head/1.jpg' %}" alt="" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/head/1.jpg' %}" alt="" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/head/1.jpg' %}" alt="" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/head/1.jpg' %}" alt="" class="img-responsive img-thumbnail">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- === End Portfolio === -->
 
 <!-- === Start Testimonials === -->
-<h1> Testimonials </h1>
+<div id="testimonials" class="bg-dark text-light">
+    <div class="container">
+        <h1 class="portfolio-intro text-center">What Clients <strong>Say</strong></h1>
+        <p class="portfolio-desc text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum provident perspiciatis, aliquid distinctio doloribus id!</p>
+        <div class="testimonial">
+            <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi exercitationem earum magnam enim cum sint . Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, facilis molestiae omnis reprehenderit tempore perspiciatis!</blockquote>
+            <h3 class="person text-center">HackerPro <span class="profession">Hacker</span></h3>
+            <div class="tab text-center"><i class="fa fa-pencil"></i></div>
+        </div>
+    </div>
+</div>
 <!-- === End Testimonials === -->
