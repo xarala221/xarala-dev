@@ -1,0 +1,1 @@
+web: gunicorn xarala.wsgi --log-file -
