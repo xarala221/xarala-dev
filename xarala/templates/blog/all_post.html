@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block navbar %}
+{% include 'blog/navbar.html' %}
+{% endblock navbar %}
+{% block content %}
+
+  <div class="all-post">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+            <img src="{% static 'images/head/1.jpg' %}" alt="" class="img-thumbnail img-responsive">
+            <p><small><i class="fa fa-calendar-check-o fa-2x"></i> : 10/11/1997</small> <i class="fa fa-user-plus fa-2x"></i> :<a href="#">HackerPro</a></p>
+        </div>
+        <div class="col-md-6">
+            <h1 class="post-title"><a href="#">Mon Premier Post</a></h1>
+            <p class="post-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste minima eligendi reiciendis nam hic non est itaque minus, tempore aliquid! Dicta minus quod expedita sed alias quaerat nobis atque, dolorem nihil praesentium laborum facere rem veniam quis deserunt voluptatibus consequatur molestias ullam. Libero sequi ipsa consequuntur earum? Aliquam, delectus dolorum!</p>
+            <span class="btn btn-outline-primary"><a href="#">Read More...</a></span>
+            <p class="share-or-comment text-center"><i class="fa fa-weixin"></i>(10) | <i class="fa fa-share-alt-square"></i>(10)</p>
+            <div class="share-post text-center">
+              <ul class="unstyled-list list-group">
+                <li class="list-group-item"><a href=""> <i class="fa fa-whatsapp fa-2x"></i></a>  <a href=""> <i class="fa fa-facebook-square fa-2x"></i></a>  <a href=""> <i class="fa fa-google-plus-square fa-2x"></i></a> <a href=""> <i class="fa fa-twitter-square fa-2x"></i></a> </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">
+            <img src="{% static 'images/head/1.jpg' %}" alt="" class="img-thumbnail img-responsive">
+            <p><small><i class="fa fa-calendar-check-o fa-2x"></i> : 10/11/1997 | </small> <i class="fa fa-user-plus fa-2x"></i> : <a href="#">HackerPro</a></p>
+        </div>
+        <div class="col-md-6">
+            <h1 class="post-title"><a href="#">Mon Deuxieme Post</a></h1>
+            <p class="post-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste minima eligendi reiciendis nam hic non est itaque minus, tempore aliquid! Dicta minus quod expedita sed alias quaerat nobis atque, dolorem nihil praesentium laborum facere rem veniam quis deserunt voluptatibus consequatur molestias ullam. Libero sequi ipsa consequuntur earum? Aliquam, delectus dolorum!</p>
+            <span class="btn btn-outline-primary"><a href="#">Read More...</a></span>
+            <p class="share-or-comment text-center"><i class="fa fa-weixin"></i>(10) | <i class="fa fa-share-alt-square"></i>(10)</p>
+            <div class="share-post text-center">
+              <ul class="unstyled-list list-group">
+                <li class="list-group-item"><a href=""> <i class="fa fa-whatsapp fa-2x"></i></a>  <a href=""> <i class="fa fa-facebook-square fa-2x"></i></a>  <a href=""> <i class="fa fa-google-plus-square fa-2x"></i></a> <a href=""> <i class="fa fa-twitter-square fa-2x"></i></a> </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+  {% include 'blog/blog_form.html' %}
+  {% include 'blog/footer.html' %}
+{% endblock content %}

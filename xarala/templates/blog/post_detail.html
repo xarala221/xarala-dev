@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  {% include 'blog/navbar.html' %}
+  <div class="all-detail">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          {% include 'blog/category.html' %}
+          <h1 class="post-title text-center">Commet devenir un bon hacker</h1>
+          <img src="{% static 'images/head/hack.jpg' %}" alt="" class="img-thumbnail img-fluid">
+          <p class="detail-post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam dolorum suscipit, sit exercitationem harum voluptatibus beatae deleniti hic fugit tempore distinctio, perspiciatis natus eaque maiores possimus, atque error dolore aut nesciunt. Placeat modi, consequuntur nesciunt obcaecati asperiores beatae natus. Rem, odit quod voluptatem deserunt incidunt laboriosam architecto voluptate labore!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="post-author text-center">
+  <div class="container">
+    <img src="{% static 'images/auth.jpg' %}" alt="" class="img-thumbnail rounded-circle">
+    <h4 class="author-desc text-center">HackerPro</h4>
+    <p class="author-detail text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quis temporibus libero amet, id at.</p>
+  </div>
+  </div>
+  {% include 'blog/blog_form.html' %}
+  {% include 'blog/footer.html' %}
+{% endblock content %}

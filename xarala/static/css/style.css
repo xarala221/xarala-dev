@@ -10,6 +10,7 @@ body {
 
 #header #navbar {
   font-weight: bold !important;
+  text-transform: uppercase
 }
 
 #header .navbar {
@@ -24,6 +25,8 @@ body {
 
 #side-menu {
   top: 55px;
+  font-weight: bold !important;
+  text-transform: uppercase;
 }
 
 #header #navbar .logo {
@@ -225,7 +228,7 @@ section .section-title {
 }
 
 #what-we-do .card .block-6:before {
-  content: "\f0d0";
+  content: "\f108";
 }
 
 #what-we-do .card:hover .card-block:before {
@@ -235,9 +238,14 @@ section .section-title {
   -moz-transition: .5s all ease;
   transition: .5s all ease;
 }
-
+/* Technologies */
 /*Portfolio*/
-
+#skills{
+  padding: 50px 0;
+}
+#skills ul li{
+  background: transparent
+}
 #portfolio {
   padding: 30px 0;
 }
@@ -352,7 +360,9 @@ section .section-title {
 .scroll-top-wrapper i.fa {
   line-height: inherit;
 }
-
+.alert{
+  margin-top: 100px;
+}
 /*My framework*/
 
 .after-line:after {

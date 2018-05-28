@@ -1,7 +1,9 @@
 from django.conf.urls import url
-from portfolio.views import *
+#from portfolio.views import *
+from portfolio.views import HomeView
+
 
 
 urlpatterns = [
-  url(r"^$", index, name="home")
+  url(r"^$", HomeView.as_view(), name="home")
 ]

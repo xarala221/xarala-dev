@@ -14,12 +14,30 @@
     <link rel="stylesheet" href="{% static "css/lightbox.css" %}">
     <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
     <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="{% static "css/blog.css" %}">
     <title> {% block title %} Ousseynou Diop | Full Stack Developpeur web{% endblock %}</title>
   </head>
   <body>
+    {% block navbar %}
+    
+    {% endblock navbar %}
+    {% block message %}
+    {% if messages %}
+            
+    <div class='alert alert-warning'>
+        <div class='container'>
+         {% for message in messages %}
+            {{ message }}<br/>
+            {% endfor %}
+        </div>
+    </div>
 
+    {% endif %}
+    {% endblock message %}
+ 
  
     {% block content %}
+
     {% endblock %}
     
     <!-- Optional JavaScript -->
